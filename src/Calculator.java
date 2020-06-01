@@ -21,8 +21,19 @@ public class Calculator {
 	}
 	private static int getAddition(String[] num) {       //Made a global method for addition
 		int sum = 0;
-		for(int i = 0; i < num.length ; i++) {
-			sum+=StringToInteger(num[i]);
+		String negativeString = "";
+		for(String i: num) {
+			if(StringToInteger(i) < 0) {
+				if(negativeString.equals("")) 
+					negativeString= i;
+				else 
+					negativeString +=(","+i);
+				
+			}
+			sum+=StringToInteger(i);
+		}
+		if(!negativeString.equals("")){
+			throw new IllegalArgumentException("Negatives are not allowed: " + negativeString);
 		}
 		return sum;
 	}

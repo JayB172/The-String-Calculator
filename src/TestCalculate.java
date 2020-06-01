@@ -31,5 +31,26 @@ public class TestCalculate {
 	public void CustomDelimiter() {
 		assertEquals(Calculator.calculate("//;\n1;2"), 3);
 	}
+	@Test (expectedExceptions= Exception.class)
+	public void NegativeNumbersThrowexception() {
+		Calculator.calculate("-1");
+	}
+	public void TheNegativeNumberReturnInTheExceptionMessage(){
+		try {
+			Calculator.calculate("-1");
+		}
+		catch(IllegalArgumentException e){
+			assertEquals(e.getMessage() , "Negatives are not allowed: -1");
+		}
+		finally {}
+		try {
+			Calculator.calculate("2,-4,3,-5");
+		}
+		catch (IllegalArgumentException e){
+			assertEquals(e.getMessage(), "Negatives are not allowed: -4,-5");
+		}
+		finally {}
+
+	}
 
 }
