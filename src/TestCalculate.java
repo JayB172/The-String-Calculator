@@ -52,5 +52,8 @@ public class TestCalculate {
 		finally {}
 
 	}
+	public void IgnoreNumbersGreaterThanThousand() {
+		assertEquals(Calculator.calculate("1,2\n1001"), 3);
+	}
 
 }

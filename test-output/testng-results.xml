@@ -1,32 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-01T09:47:18 IST" name="Default suite" finished-at="2020-06-01T09:47:18 IST" duration-ms="47">
+  <suite started-at="2020-06-01T09:53:02 IST" name="Default suite" finished-at="2020-06-01T09:53:02 IST" duration-ms="56">
     <groups>
     </groups>
-    <test started-at="2020-06-01T09:47:18 IST" name="Default test" finished-at="2020-06-01T09:47:18 IST" duration-ms="47">
+    <test started-at="2020-06-01T09:53:02 IST" name="Default test" finished-at="2020-06-01T09:53:02 IST" duration-ms="56">
       <class name="TestCalculate">
-        <test-method is-config="true" signature="init()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="init" finished-at="2020-06-01T09:47:18 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="init" finished-at="2020-06-01T09:53:02 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="CustomDelimiter()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="CustomDelimiter" finished-at="2020-06-01T09:47:18 IST" duration-ms="6" status="PASS">
+        <test-method signature="CustomDelimiter()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="CustomDelimiter" finished-at="2020-06-01T09:53:02 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CustomDelimiter -->
-        <test-method signature="EmptyString()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="EmptyString" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="EmptyString()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="EmptyString" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EmptyString -->
-        <test-method signature="NegativeNumbersThrowexception()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="NegativeNumbersThrowexception" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="IgnoreNumbersGreaterThanThousand()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="IgnoreNumbersGreaterThanThousand" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IgnoreNumbersGreaterThanThousand -->
+        <test-method signature="NegativeNumbersThrowexception()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="NegativeNumbersThrowexception" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Negatives are not allowed: -1]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.IllegalArgumentException: Negatives are not allowed: -1
-at Calculator.getAddition(Calculator.java:36)
+at Calculator.getAddition(Calculator.java:39)
 at Calculator.calculate(Calculator.java:19)
 at TestCalculate.NegativeNumbersThrowexception(TestCalculate.java:36)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -63,23 +67,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NegativeNumbersThrowexception -->
-        <test-method signature="SingleString()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="SingleString" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="SingleString()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="SingleString" finished-at="2020-06-01T09:53:02 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SingleString -->
-        <test-method signature="TheNegativeNumberReturnInTheExceptionMessage()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="TheNegativeNumberReturnInTheExceptionMessage" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="TheNegativeNumberReturnInTheExceptionMessage()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="TheNegativeNumberReturnInTheExceptionMessage" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TheNegativeNumberReturnInTheExceptionMessage -->
-        <test-method signature="ThreeNumberDelimitedEitherWay()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="ThreeNumberDelimitedEitherWay" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="ThreeNumberDelimitedEitherWay()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="ThreeNumberDelimitedEitherWay" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThreeNumberDelimitedEitherWay -->
-        <test-method signature="TwoNumbersDelimitedByNewLineReturnsTheSum()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="TwoNumbersDelimitedByNewLineReturnsTheSum" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="TwoNumbersDelimitedByNewLineReturnsTheSum()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="TwoNumbersDelimitedByNewLineReturnsTheSum" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TwoNumbersDelimitedByNewLineReturnsTheSum -->
-        <test-method signature="TwoStringsDelimitedByCommaReturnsTheSum()[pri:0, instance:TestCalculate@6293abcc]" started-at="2020-06-01T09:47:18 IST" name="TwoStringsDelimitedByCommaReturnsTheSum" finished-at="2020-06-01T09:47:18 IST" duration-ms="1" status="PASS">
+        <test-method signature="TwoStringsDelimitedByCommaReturnsTheSum()[pri:0, instance:TestCalculate@7995092a]" started-at="2020-06-01T09:53:02 IST" name="TwoStringsDelimitedByCommaReturnsTheSum" finished-at="2020-06-01T09:53:02 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TwoStringsDelimitedByCommaReturnsTheSum -->

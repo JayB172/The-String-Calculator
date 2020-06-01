@@ -30,6 +30,9 @@ public class Calculator {
 					negativeString +=(","+i);
 				
 			}
+			if(StringToInteger(i)>1000) {
+				continue;
+			}
 			sum+=StringToInteger(i);
 		}
 		if(!negativeString.equals("")){

@@ -9,14 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">47</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">56</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="8">TestCalculate</td><td><a href="#m0">CustomDelimiter</a></td><td rowspan="1">1590985038577</td><td rowspan="1">6</td></tr><tr class="passedeven"><td><a href="#m1">EmptyString</a></td><td rowspan="1">1590985038586</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">NegativeNumbersThrowexception</a></td><td rowspan="1">1590985038588</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">SingleString</a></td><td rowspan="1">1590985038591</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">TheNegativeNumberReturnInTheExceptionMessage</a></td><td rowspan="1">1590985038594</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m5">ThreeNumberDelimitedEitherWay</a></td><td rowspan="1">1590985038596</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">TwoNumbersDelimitedByNewLineReturnsTheSum</a></td><td rowspan="1">1590985038598</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">TwoStringsDelimitedByCommaReturnsTheSum</a></td><td rowspan="1">1590985038600</td><td rowspan="1">1</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="9">TestCalculate</td><td><a href="#m0">CustomDelimiter</a></td><td rowspan="1">1590985382262</td><td rowspan="1">5</td></tr><tr class="passedeven"><td><a href="#m1">EmptyString</a></td><td rowspan="1">1590985382270</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m2">IgnoreNumbersGreaterThanThousand</a></td><td rowspan="1">1590985382273</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">NegativeNumbersThrowexception</a></td><td rowspan="1">1590985382275</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m4">SingleString</a></td><td rowspan="1">1590985382278</td><td rowspan="1">2</td></tr><tr class="passedeven"><td><a href="#m5">TheNegativeNumberReturnInTheExceptionMessage</a></td><td rowspan="1">1590985382281</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m6">ThreeNumberDelimitedEitherWay</a></td><td rowspan="1">1590985382284</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m7">TwoNumbersDelimitedByNewLineReturnsTheSum</a></td><td rowspan="1">1590985382287</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">TwoStringsDelimitedByCommaReturnsTheSum</a></td><td rowspan="1">1590985382290</td><td rowspan="1">1</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">TestCalculate#CustomDelimiter</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">TestCalculate#EmptyString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCalculate#NegativeNumbersThrowexception</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Negatives are not allowed: -1
-	at Calculator.getAddition(Calculator.java:36)
+<h3 id="m2">TestCalculate#IgnoreNumbersGreaterThanThousand</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCalculate#NegativeNumbersThrowexception</h3><table class="result"><tr><th>Expected Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Negatives are not allowed: -1
+	at Calculator.getAddition(Calculator.java:39)
 	at Calculator.calculate(Calculator.java:19)
 	at TestCalculate.NegativeNumbersThrowexception(TestCalculate.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -48,10 +49,10 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCalculate#SingleString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">TestCalculate#TheNegativeNumberReturnInTheExceptionMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">TestCalculate#ThreeNumberDelimitedEitherWay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">TestCalculate#TwoNumbersDelimitedByNewLineReturnsTheSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">TestCalculate#TwoStringsDelimitedByCommaReturnsTheSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCalculate#SingleString</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCalculate#TheNegativeNumberReturnInTheExceptionMessage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCalculate#ThreeNumberDelimitedEitherWay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCalculate#TwoNumbersDelimitedByNewLineReturnsTheSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCalculate#TwoStringsDelimitedByCommaReturnsTheSum</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
