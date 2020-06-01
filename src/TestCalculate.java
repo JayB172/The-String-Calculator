@@ -28,5 +28,8 @@ public class TestCalculate {
 	public void ThreeNumberDelimitedEitherWay() {
 		assertEquals(Calculator.calculate("1,2\n3"), 6);
 	}
+	public void CustomDelimiter() {
+		assertEquals(Calculator.calculate("//;\n1;2"), 3);
+	}
 
 }
