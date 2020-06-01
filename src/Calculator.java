@@ -12,7 +12,17 @@ public class Calculator {
 			return Integer.parseInt(input);
 		}
 		else {
-			return Integer.parseInt(num[0]) + Integer.parseInt(num[1]);
+			return (getAddition(num));
 		}
+	}
+	private static int getAddition(String[] num) {
+		int sum = 0;
+		for(int i = 0; i < num.length ; i++) {
+			sum+=StringToInteger(num[i]);
+		}
+		return sum;
+	}
+	private static int StringToInteger(String input){
+		return Integer.parseInt(input);
 	}
 }
