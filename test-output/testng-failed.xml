@@ -5,7 +5,8 @@
     <classes>
       <class name="TestCalculate">
         <methods>
-          <include name="EmptyString"/>
+          <include name="SingleString"/>
+          <include name="init"/>
         </methods>
       </class> <!-- TestCalculate -->
     </classes>

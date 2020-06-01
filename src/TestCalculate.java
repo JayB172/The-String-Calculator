@@ -1,3 +1,4 @@
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
@@ -5,9 +6,18 @@ import static org.testng.Assert.assertEquals;
 @Test
 public class TestCalculate {
 	
+	private Calculator calculator;         //Made it global as using this function repeatedly 
+	
+	@BeforeTest
+	public void init() {
+		calculator=new Calculator();
+	}
+	
 	public void EmptyString() {
-		Calculator calculator = new Calculator();
 		assertEquals(Calculator.calculate("") , 0);
+	}
+	public void SingleString() {
+		assertEquals(Calculator.calculate("1"), 1);
 	}
 
 }
