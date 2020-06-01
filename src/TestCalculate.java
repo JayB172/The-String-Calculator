@@ -22,5 +22,8 @@ public class TestCalculate {
 	public void TwoStringsDelimitedByCommaReturnsTheSum() {
 		assertEquals(Calculator.calculate("1,2"), 3);
 	}
+	public void TwoNumbersDelimitedByNewLineReturnsTheSum() {
+		assertEquals(Calculator.calculate("1\n2"), 3);
+	}
 
 }

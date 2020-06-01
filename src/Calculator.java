@@ -3,7 +3,7 @@ public class Calculator {
 
 	public static int calculate(String input) {
 		// TODO Auto-generated method stub
-		String delimiter = ",";
+		String delimiter = ",|\n";
 		String[] num = input.split(delimiter);
 		if (input.isEmpty()) {
 			return 0;
