@@ -19,5 +19,8 @@ public class TestCalculate {
 	public void SingleString() {
 		assertEquals(Calculator.calculate("1"), 1);
 	}
+	public void TwoStringsDelimitedByCommaReturnsTheSum() {
+		assertEquals(Calculator.calculate("1,2"), 3);
+	}
 
 }

@@ -5,8 +5,8 @@
     <classes>
       <class name="TestCalculate">
         <methods>
-          <include name="SingleString"/>
           <include name="init"/>
+          <include name="TwoStringsDelimitedByCommaReturnsTheSum"/>
         </methods>
       </class> <!-- TestCalculate -->
     </classes>
